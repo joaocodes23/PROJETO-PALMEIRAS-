@@ -1,0 +1,147 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #f4f4f4, #e1e1e1); /* Fundo leve */
+    color: #333; /* Texto escuro para melhor legibilidade */
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007A33; /* Verde do Palmeiras */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+header .logo img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* Texto branco */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0; /* Tom mais claro de branco */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(0, 128, 0, 0.8), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1606722647180-b00e89c8e6e8') no-repeat center center/cover; /* Imagem de fundo */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-text .btn {
+    background-color: #ffffff; /* Branco */
+    padding: 15px 30px;
+    color: #007A33; /* Verde do Palmeiras */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #007A33; /* Borda verde */
+}
+
+.hero-text .btn:hover {
+    background-color: #eaeaea; /* Efeito hover claro */
+    transform: scale(1.05);
+}
+
+/* Trailer Section */
+.trailer-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 128, 0, 0.7), #ffffff); /* Degradê entre as seções */
+}
+
+.trailer-section h2 {
+    font-size: 2.5em;
+    color: #007A33; /* Verde do Palmeiras */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.trailer-section h2:hover {
+    color: #005B28; /* Tom mais escuro de verde */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007A33; /* Verde do Palmeiras */
+    color: #ffffff; /* Texto branco */
+    transition: all 0.4s ease;
+}
+
+footer:hover {
+    background-color: #005B28; /* Tom mais escuro de verde */
+}
